@@ -9,8 +9,12 @@
     "test:unit": "vitest"
   },
   "dependencies": {
-    "vue": "^3.3.2",
-    "vue-router": "^4.2.2"
+    "@vue/compiler-sfc": "^3.3.4",
+    "firebase": "^9.22.2",
+    "uuid": "^9.0.0",
+    "vue": "^3.2.36",
+    "vue-router": "^4.2.2",
+    "vuefire": "^3.0.0-alpha.9"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

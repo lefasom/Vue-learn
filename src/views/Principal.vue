@@ -1,12 +1,27 @@
 <template>
-    <div>
-      <h1>Pantalla Principal</h1>
-      <router-link to="/lista">Ir a la Lista</router-link>
+  <div>
+    <Img :imageUrl="imageUrl" />
+    <h1>Home</h1>
+    <router-link to="/lista">Lista</router-link>
 
-    </div>
-  </template>
+  </div>
+</template>
   
-  <script>
+<script>
+import { ref } from 'vue'
+import Img from '../components/Img.vue'
+export default {
+  components: {
+    Img
+  },
+  setup() {
+    const imageUrl = ref('https://tse3.mm.bing.net/th?id=OIP.gzRAs75siIbw4mMJq0TO4wAAAA&pid=Api&P=0&h=180');
 
-  </script>
+    return {
+      imageUrl
+    };
+    // Lógica del componente A
+  }
+}
+</script>
   
